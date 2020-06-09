@@ -98,8 +98,6 @@ Define Class StringClass As Custom
                 lcReplaceStr = OPEN_BRACKET + lcExtractedStr + CLOSE_BRACKET
                 lcFinalStr = StrTran(lcFinalStr, lcReplaceStr, Transform(This.aParams[val(lcExtractedStr)]))
             EndFor
-        Else
-            This.SetErrorMsg(1001, "Empty string")
         Endif
         Return lcFinalStr
     EndFunc

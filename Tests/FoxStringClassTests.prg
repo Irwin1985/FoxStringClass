@@ -46,6 +46,14 @@ Define Class FoxStringClassTests As FxuTestCase Of FxuTestCase.prg
 		This.MessageOut(String.Format("Hi, my name is {1} and I'm {2} years old 'cause I was born in {3}", lcName, lnAge, ldBirthDate))
 	Endfunc
 && ======================================================================== &&
+&& Function TestFormatWithoutWilcard
+&& ======================================================================== &&
+	Function TestFormatWithoutWilcard
+		Local lcResult as String
+		lcResult = String.Format("Sample text without any wilcard!")
+		This.MessageOut(lcResult)
+	Endfunc
+&& ======================================================================== &&
 && Function TestFormatShuffled
 && ======================================================================== &&
 	Function TestFormatShuffled
